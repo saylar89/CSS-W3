@@ -1,0 +1,35 @@
+div.ex4 {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 300px;
+  margin-left: 80px;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+p.ex2 {
+  margin: 25px 50px 75px 100px;
+  border: 4px solid black;
+  padding: 4px;
+  outline: 4px dotted palevioletred;
+  outline-offset: 3px;
+}
+p.ex1 {
+  margin: inherit;
+}
+
+div.ex3 {
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: darkgoldenrod;
+}
+div.ex5 {
+  max-width: 500px;
+  height: 100px;
+  background-color: rgb(243, 88, 179);
+}
