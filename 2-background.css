@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(255, 255, 255);
+  background-image: url("flower.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+}
+
+div {
+  background-color: green;
+  width: 700px;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+div.f {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+div.s {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.t {
+  background: rgba(0, 128, 0, 0.6);
+}
+p {
+  color: rgb(255, 0, 0);
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+
+  background: #ffffff url("mini.png") no-repeat right top;
+}
+#example1 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}

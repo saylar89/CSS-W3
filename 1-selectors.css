@@ -1,0 +1,35 @@
+/* this is how to comment in css*/
+p {
+    text-align: center;
+    color: red;
+  }
+
+#para1 {
+    text-align: center;
+    c
+}
+.center {
+        text-align: center;
+        color: red;
+      }
+
+p.center {
+        text-align: center;
+        color: red;
+      }
+
+* {
+        text-align: center;
+        color: blue;
+      }
+
+
+h2, p {
+        text-align: center;
+        color: red;
+      }
+h1 {
+    background-color:rgba(255, 38, 0, 0.5);
+}
+
+
