@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
+    />
+    <link rel="stylesheet" href="6-font.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font</title>
+  </head>
+  <body>
+    <h1>Fonts</h1>
+    <p>
+      Web safe fonts are fonts that are universally installed across all
+      browsers and devices
+    </p>
+    <p class="a1">The font-weight property specifies the weight of a font</p>
+    <p class="normal">My name is Hege Refsnes.</p>
+    <p class="small">My name is Hege Refsnes.</p>
+    <h2>Font size</h2>
+    <h1 class="d1">This is heading 1</h1>
+    <h2 class="d2">This is heading 2</h2>
+    <p class="d3">This is a paragraph.</p>
+    <h2>Responsive Font Size</h2>
+    <h1 style="font-size: 10vw">Hello World</h1>
+    <p style="font-size: 5vw">Hello World</p>
+    <h2>CSS Google Fonts</h2>
+    <p>
+      Just add a special style sheet link in the head section and then refer to
+      the font in the CSS.
+    </p>
+    <p class="g1">
+      Here, we want to use a font named "Sofia" from Google Fonts
+    </p>
+    <p class="g2">
+      Here, we want to use a font named "Trirong" from Google Fonts
+    </p>
+    <p class="g3">
+      Here, we want to use a font named "Audiowide" from Google Fonts
+    </p>
+    <h2>Enabling Font Effects</h2>
+    <p>
+      Google have also enabled different font effects that you can use. First
+      add effect=effectname to the Google API, then add a special class name to
+      the element that is going to use the special effect. The class name always
+      starts with font-effect- and ends with the effectname.
+    </p>
+    <p>
+      To request multiple font effects, just separate the effect names with a
+      pipe character (|), like this
+    </p>
+    <h3 class="font-effect-neon">Neon Effect</h3>
+    <h3 class="font-effect-outline">Outline Effect</h3>
+    <h3 class="font-effect-emboss">Emboss Effect</h3>
+    <h3 class="font-effect-shadow-multiple">Multiple Shadow Effect</h3>
+    <h2>Shorthand</h2>
+    <p>
+      To shorten the code, it is also possible to specify all the individual
+      font properties in one property. The font property is a shorthand property
+      for:
+    </p>
+    <ol>
+      <li>font-style</li>
+      <li>font-variant</li>
+      <li>font-weight</li>
+      <li>font-size/line-height</li>
+      <li>font-family</li>
+    </ol>
+    <p class="b">Use font to set several font properties in one declaration</p>
+  </body>
+</html>

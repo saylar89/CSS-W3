@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(208, 247, 170);
+}
+
+h1 {
+  color: crimson;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  color: black;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+p.a1 {
+  font-weight: bold;
+}
+p.normal {
+  font-variant: normal;
+}
+p.small {
+  font-variant: small-caps;
+}
+h1.d1 {
+  font-size: 40px;
+}
+
+h2.d2 {
+  font-size: 30px;
+}
+
+p.d3 {
+  font-size: 4em;
+}
+p.g1 {
+  font-family: "Sofia", sans-serif;
+}
+p.g2 {
+  font-family: "Trirong", serif;
+}
+p.g3 {
+  font-family: "Audiowide", sans-serif;
+}
+h3 {
+  font-family: "Sofia", sans-serif;
+}
+p.b {
+  font: italic small-caps bold 20px/30px Georgia, serif;
+}
