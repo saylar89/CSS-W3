@@ -1,0 +1,84 @@
+a:link {
+  color: brown;
+  background-color: aqua;
+}
+a:hover {
+  color: aqua;
+  background-color: brown;
+}
+a:visited {
+  color: chartreuse;
+}
+a:active {
+  color: darkorange;
+}
+a {
+  text-decoration: none;
+}
+a.b1:link,
+a.b1:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.b1:hover,
+a.b1:active {
+  background-color: green;
+  color: white;
+}
+
+a.one:link {
+  color: #ff0000;
+}
+a.one:visited {
+  color: #0000ff;
+}
+a.one:hover {
+  color: #ffcc00;
+}
+
+a.two:link {
+  color: #ff0000;
+}
+a.two:visited {
+  color: #0000ff;
+}
+a.two:hover {
+  font-size: 150%;
+}
+
+a.three:link {
+  color: #ff0000;
+}
+a.three:visited {
+  color: #0000ff;
+}
+a.three:hover {
+  background: #66ff66;
+}
+
+a.four:link {
+  color: #ff0000;
+}
+a.four:visited {
+  color: #0000ff;
+}
+a.four:hover {
+  font-family: monospace;
+}
+
+a.five:link {
+  color: #ff0000;
+  text-decoration: none;
+}
+a.five:visited {
+  color: #0000ff;
+  text-decoration: none;
+}
+a.five:hover {
+  text-decoration: underline;
+}
