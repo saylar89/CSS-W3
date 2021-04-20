@@ -1,0 +1,51 @@
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+ul.z {
+  list-style-image: url("icon.png");
+}
+ul.h {
+  list-style-position: outside;
+}
+
+ul.j {
+  list-style-position: inside;
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ol.k1 {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul.k2 {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol.k1 li {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul.k2 li {
+  background: #cce5ff;
+  margin: 5px;
+}
