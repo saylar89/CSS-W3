@@ -1,0 +1,25 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table.a1 {
+  width: 100%;
+}
+table.a2 {
+  border-collapse: collapse;
+}
+table.a3 {
+  width: 50%;
+  height: 200px;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+  padding: 5px;
+}
+td {
+  vertical-align: bottom;
+  text-align: center;
+}
