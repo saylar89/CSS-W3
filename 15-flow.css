@@ -1,0 +1,62 @@
+img.a1 {
+  float: right;
+}
+
+.div1 {
+  background-color: aqua;
+  float: left;
+  padding: 15px;
+}
+.div2 {
+  background-color: brown;
+  float: left;
+  padding: 15px;
+}
+.div3 {
+  background-color: rgb(1, 160, 35);
+  float: left;
+  padding: 15px;
+}
+.div4 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73ad21;
+}
+
+.div5 {
+  border: 1px solid red;
+}
+
+.div6 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73ad21;
+}
+
+.div7 {
+  border: 1px solid red;
+  clear: left;
+}
+
+div.b1 {
+  border: 3px solid #4caf50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+  border: 3px solid #4caf50;
+  padding: 5px;
+}
+
+.img2 {
+  float: right;
+}
