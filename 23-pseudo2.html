@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: chartreuse;
+      }
+      h2 {
+        color: darkcyan;
+      }
+      div.a1 p:first-child {
+        color: blue;
+      }
+
+      div.a2 p i:first-child {
+        color: red;
+      }
+      div.a3 p:first-child i {
+        color: rgb(238, 255, 0);
+      }
+      q:lang(no) {
+        quotes: "~""~";
+        color: rgb(245, 139, 0);
+        border: 1px solid black;
+      }
+    </style>
+    <title>Pseudo</title>
+  </head>
+  <body>
+    <h1>CSS - The :first-child Pseudo-class</h1>
+    <h2>Match the first p element</h2>
+    <div class="a1">
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+    <h2>Match the first i element in all p elements</h2>
+    <div class="a2">
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+    <h2>Match all i elements in all first child p elements</h2>
+    <div class="a3">
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+    <hr />
+    <h1>CSS - The :lang Pseudo-class</h1>
+    <p>
+      The :lang pseudo-class allows you to define special rules for different
+      languages.<br />
+      <br />
+      In the example below, :lang defines the quotation marks for &ltq&gt
+      elements with lang="no":
+    </p>
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+    <p>
+      In this example, :lang defines the quotation marks for q elements with
+      lang="no":
+    </p>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.a1 {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+
+      div.a1:hover {
+        background-color: blue;
+      }
+
+      p.a3 {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+      div.a2:hover p {
+        display: block;
+      }
+    </style>
+    <title>Pseudo Classes</title>
+  </head>
+  <body>
+    <h2>Hover on div</h2>
+    <p>Mouse over the div element below to change its background color:</p>
+
+    <div class="a1">Mouse Over Me</div>
+
+    <h2>Simple Tooltip Hover</h2>
+    <div class="a2">
+      Hover over me to show the p element
+      <p class="a3">Tada! Here I am!</p>
+    </div>
+  </body>
+</html>

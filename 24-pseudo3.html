@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p.a1::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+
+      p.a2::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+      }
+      p.a3::before {
+        content: url(icon.png);
+      }
+      ::marker {
+        color: #ff0000;
+        font-size: 20px;
+      }
+      ::-moz-selection {
+        /* Code for Firefox */
+        color: red;
+        background: yellow;
+      }
+
+      ::selection {
+        color: red;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The ::first-line Pseudo-element</h2>
+    <p class="a1">
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+    <h2>The ::first-letter Pseudo-element</h2>
+    <p class="a2">
+      You can use the ::first-letter pseudo-element to add a special effect to
+      the first character of a text!
+    </p>
+    <h2>CSS - The ::before Pseudo-element</h2>
+    <p class="a3">
+      The ::before pseudo-element inserts content before the content of an
+      element.
+    </p>
+    <h2>CSS - The ::marker Pseudo-element</h2>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
+    <h2>CSS - The ::selection Pseudo-element</h2>
+
+    <h3>Select some text on this page:</h3>
+
+    <p>This is a paragraph.</p>
+    <div>This is some text in a div element.</div>
+
+    <p>
+      <strong>Note:</strong> Firefox supports an alternative, the
+      ::-moz-selection property.
+    </p>
+  </body>
+</html>
