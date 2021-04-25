@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Effects</title>
+    <style>
+      div.test {
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        border: 1px solid #000000;
+      }
+
+      div.test:hover {
+        overflow: visible;
+      }
+
+      p.test1 {
+        width: 11em;
+        border: 1px solid #000000;
+        word-wrap: break-word;
+      }
+
+      p.test2 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: keep-all;
+      }
+
+      p.test3 {
+        width: 140px;
+        border: 1px solid #000000;
+        word-break: break-all;
+      }
+
+      p.test11 {
+        writing-mode: horizontal-tb;
+      }
+
+      span.test22 {
+        writing-mode: vertical-rl;
+      }
+
+      p.test22 {
+        writing-mode: vertical-rl;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow: ellipsis">
+      This is some long text that will not fit in the box
+    </div>
+    <br />
+    <div class="test" style="text-overflow: clip">
+      This is some long text that will not fit in the box
+    </div>
+
+    <h1>The word-wrap Property</h1>
+
+    <p class="test1">
+      This paragraph contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will break and wrap
+      to the next line.
+    </p>
+
+    <h1>The word-break Property</h1>
+
+    <p class="test2">
+      This paragraph contains some text. This line will-break-at-hyphens.
+    </p>
+
+    <p class="test3">
+      This paragraph contains some text. The lines will break at any character.
+    </p>
+
+    <p>
+      <b>Note:</b> The word-break property is not supported in Opera 12 and
+      earlier versions.
+    </p>
+
+    <h1>The writing-mode Property</h1>
+
+    <p class="test11">Some text with default writing-mode.</p>
+
+    <p>
+      Some text with a span element with a
+      <span class="test22">vertical-rl</span> writing-mode.
+    </p>
+
+    <p class="test22">Some text with writing-mode: vertical-rl.</p>
+  </body>
+</html>
