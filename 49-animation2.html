@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation</title>
+    <style>
+      div.a1 {
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-direction: reverse;
+        float: left;
+        width: 22%;
+        text-align: center;
+      }
+
+      div.a2 {
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        float: left;
+        width: 22%;
+        margin-left: 150px;
+        text-align: center;
+      }
+
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 100px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 100px;
+          top: 100px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 100px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      div.a3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse;
+        float: left;
+        width: 22%;
+        margin-left: 150px;
+        text-align: center;
+      }
+      div.a8 {
+        margin-top: 300px;
+      }
+
+      div.div7 {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(0, 80, 155);
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+        margin: 5px;
+      }
+
+      #div1 {
+        animation-timing-function: linear;
+      }
+      #div2 {
+        animation-timing-function: ease;
+      }
+      #div3 {
+        animation-timing-function: ease-in;
+      }
+      #div4 {
+        animation-timing-function: ease-out;
+      }
+      #div5 {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+
+      div.b1 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: example2;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes example2 {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 200px;
+          background-color: blue;
+        }
+      }
+
+      div.b2 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: example3;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes example3 {
+        from {
+          left: 0px;
+          background-color: yellow;
+        }
+        to {
+          left: 200px;
+        }
+      }
+
+      div.b3 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: example4;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes example4 {
+        from {
+          left: 0px;
+          background-color: yellow;
+        }
+        to {
+          left: 200px;
+          background-color: blue;
+        }
+      }
+
+      div.c1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: myfirst 5s linear 8s infinite alternate;
+      }
+
+      @keyframes myfirst {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>Note:</b> This example does not work in Internet Explorer 9 and earlier
+      versions.
+    </p>
+
+    <div class="a1">Reverse</div>
+    <div class="a2">Alternate</div>
+    <div class="a3">alternate-reverse</div>
+
+    <div class="a8">
+      <div id="div1" class="div7">linear</div>
+      <div id="div2" class="div7">ease</div>
+      <div id="div3" class="div7">ease-in</div>
+      <div id="div4" class="div7">ease-out</div>
+      <div id="div5" class="div7">ease-in-out</div>
+    </div>
+
+    <p>
+      Let the div element retain the style values from the last keyframe when
+      the animation ends:
+    </p>
+
+    <div class="b1">forwards</div>
+
+    <p>
+      Let the div element get the style values set by the first keyframe before
+      the animation starts (during the animation-delay period):
+    </p>
+
+    <div class="b2">backwards</div>
+
+    <p>
+      Let the div element get the style values set by the first keyframe before
+      the animation starts, and retain the style values from the last keyframe
+      when the animation ends:
+    </p>
+
+    <div class="b3">both</div>
+    <h2>Shorthand Property</h2>
+    <div class="c1">Shorthand Property</div>
+    <p style="margin-top: 210px">
+      The example above uses six of the animation properties
+    </p>
+  </body>
+</html>

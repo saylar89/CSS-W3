@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      div.a1 {
+        width: 49%;
+        height: 100px;
+        background-color: red;
+        animation-name: example1;
+        animation-duration: 4s;
+        float: left;
+        margin: 3px;
+      }
+
+      @keyframes example1 {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+      div.a2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example2;
+        animation-duration: 8s;
+        float: left;
+        width: 49%;
+        margin: 3px;
+      }
+
+      @keyframes example2 {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+      div.a3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example3;
+        animation-duration: 4s;
+        float: left;
+        width: 22%;
+      }
+
+      @keyframes example3 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        33% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+
+        66% {
+          background-color: green;
+          left: 0px;
+          top: 0px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      div.a4 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example4;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        float: left;
+        width: 22%;
+        margin-left: 355px;
+      }
+
+      @keyframes example4 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      div.a5 {
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example5;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        float: left;
+        width: 33%;
+      }
+
+      @keyframes example5 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      div.a6 {
+        width: 33%;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example6;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        float: left;
+        margin: 20px;
+      }
+
+      @keyframes example6 {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>Note:</b> This example does not work in Internet Explorer 9 and earlier
+      versions.
+    </p>
+
+    <div class="a1"></div>
+
+    <div class="a2"></div>
+    <br /><br /><br /><br /><br /><br />
+    <div class="a3">color and the position</div>
+
+    <div class="a4">delay 2s</div>
+    <br /><br /><br /><br /><br /><br />
+    <div class="a5">delay -2s</div>
+    <div class="a6">iteration-count ( 3 times)</div>
+  </body>
+</html>
